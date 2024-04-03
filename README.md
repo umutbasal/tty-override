@@ -1,6 +1,10 @@
 # tty-override
 
 This is a simple script that allows you to override the stdout and stderr of a tty.
+# Install
+```
+cargo install --git https://github.com/umutbasal/tty-override
+```
 
 ## Usage
 
