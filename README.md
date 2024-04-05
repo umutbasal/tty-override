@@ -1,6 +1,6 @@
 # tty-override
 
-This is a simple script that allows you to override the stdout and stderr of a tty.
+This is a simple software that allows you to override the stdout and stderr of a tty.
 
 ## Install
 
