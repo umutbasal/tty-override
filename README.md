@@ -9,6 +9,22 @@ cargo install --git https://github.com/umutbasal/tty-override
 ```
 
 ## Usage
+### Example Config
+```toml
+[gh-copilot."*"]
+rules = [
+	["Welcome.*\n", ""],
+	["version.*\n", ""],
+	["I'm powered.*\n", ""],
+	["^\\W\\[[0-9;]*m\\W\\[[0-9;]*m\r\n", ""],
+	["^\\W\\[[0-9;]*m\\W.*?\\[2K\r\n", ""]
+]
+
+[vi." "]
+rules = [
+	["VIM - Vi IMproved", "      VSCODE"],
+]
+```
 
 ```sh
 #~/tty-override/config/config.toml
