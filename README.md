@@ -11,16 +11,8 @@ cargo install --git https://github.com/umutbasal/tty-override
 ## Usage
 
 ```sh
-cat >~/tty-override/config/config.toml <<EOL
-[gh-copilot."*"]
-rules = [
-	["Welcome.*\n", ""],
-	["version.*\n", ""],
-	["I'm powered.*\n", ""],
-	["^\\W\\[[0-9;]*m\\W\\[[0-9;]*m\r\n", ""],
-	["^\\W\\[[0-9;]*m\\W.*?\\[2K\r\n", ""]
-]
-EOL
+#~/tty-override/config/config.toml
+curl https://raw.githubusercontent.com/umutbasal/tty-override/master/config/config.toml -o ~/tty-override/config/config.toml
 ```
 
 ```sh
