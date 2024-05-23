@@ -59,7 +59,7 @@ fn main() -> Result<()> {
 // Load configuration from file
 fn load_config() -> Result<Config> {
     let home = std::env::var("HOME").expect("HOME not set");
-    let path = format!("{}/tty-override/config/config.toml", home);
+    let path = format!("{}/.config/tty-override/config.toml", home);
     Config::from_file("./config/config.toml")
         .or(Config::from_file(&path))
         .map_err(|e| e)
