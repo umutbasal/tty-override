@@ -28,7 +28,7 @@ rules = [
 
 ```sh
 #~/tty-override/config/config.toml
-curl https://raw.githubusercontent.com/umutbasal/tty-override/master/config/config.toml -o ~/tty-override/config/config.toml
+curl https://raw.githubusercontent.com/umutbasal/tty-override/master/config/config.toml --create-dirs -o ~/tty-override/config/config.toml
 ```
 
 ```sh
