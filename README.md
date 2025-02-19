@@ -35,4 +35,12 @@ curl https://raw.githubusercontent.com/umutbasal/tty-override/master/config/conf
 tty-override gh copilot suggest "list all files in the current directory"
 ```
 
+```sh
+# aliases in .zshrc
+alias '??'='tty-override gh copilot suggest -t shell'
+alias 'git?'='tty-override gh copilot suggest -t git'
+alias 'gh?'='tty-override gh copilot suggest -t gh'
+alias 'explain'='tty-override gh copilot explain'
+```
+
 ![Output](image.png)
